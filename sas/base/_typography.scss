@@ -1,0 +1,30 @@
+@mixin heading-text{
+  text-align: center;
+  color: $text-color;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-weight: normal;
+
+}
+
+h1,h2,h3{
+  @include heading-text;
+}
+
+
+@mixin button-styles {
+  text-align: center;
+  background-color:inherit;
+  color: white;
+  font-size: 16px;
+  text-transform: uppercase;
+  border: 1px solid white;
+  border-radius: 9px;
+  padding: 10px;
+
+  }
+
+button{
+  @include button-styles;
+
+}
